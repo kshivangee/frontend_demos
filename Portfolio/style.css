@@ -1,0 +1,26 @@
+.site-header {
+	background-color: cyan;
+	color: white;
+	height: 100vh;
+	font-family: monospace;
+	display: flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items: center;
+}
+.linkedin-link{
+	color: white;
+}
+.profileimage{
+	border-radius: 50%;
+	height:300px;
+	width: 300px;
+	align-self:center;
+	box-shadow: #b25959 2px 5px 5px;
+}
+.maincontent{
+	margin: 15px;
+}
+body{
+	margin:0px;
+}
