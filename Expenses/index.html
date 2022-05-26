@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Expense App </title>
+		<meta content="width=device-width, initial-scale=1" name="viewport"/>
+		<meta name ="theme-color" content="#ffb380"/>
+		<style>
+			body{
+				display: flex;
+				flex-direction:column; 
+				justify-content:center;
+				align-items: center;
+				height: 100vh;
+			}
+		
+		</style>
+		
+	</head>
+	<body>
+		<h1 id="result"></h1>
+		<input id="inptamt" type="text"></input>
+		<button id="addExpense">+</button>
+		
+		<script>
+			let totalexpense=0;
+			
+			let result=document.getElementById("result");
+			function addExpense(){
+				const expense = document.getElementById("inptamt").value;
+				console.log({expense});
+				totalexpense+=parseInt(expense);
+				console.log({totalexpense});
+				result.innerHTML=totalexpense;
+			}
+			
+			const element=document.querySelector("#addExpense")
+			element.addEventListener("click", addExpense, false);
+			// console.log(element)
+			
+		</script>
+	</body>
+</html>
